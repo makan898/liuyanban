@@ -19,5 +19,5 @@ fclose($handle);
 //	echo "<script>alert('Unsuccessful!');location.href='login.php';</script>";
 //}
 }
-$pdo=$result=null;
+//$pdo=$result=null;
 ?>

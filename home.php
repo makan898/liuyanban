@@ -72,6 +72,7 @@ date_default_timezone_set("Asia/Shanghai");
                     <td align="center">
                         <a href='./sc.php?id=<?= $k ?>'>Delete</a>  
                         <a href='./xg.php?id=<?= $k ?>'>Repair</a>
+                        
                     </td>
  
                 </tr>
@@ -84,6 +85,7 @@ date_default_timezone_set("Asia/Shanghai");
 <table align="center">
 <td align="center">
 <input type="button" onclick="window.location.href='logout.php'" value="Logout">
+<input type="button" onclick="window.location.href='password.php'" value="Change password">
 </td>
 </table>
 </form>

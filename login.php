@@ -4,15 +4,13 @@ header("Content-type: text/html; charset=utf-8");
 $username=trim($_POST["username"]);
 $password=$_POST["pw"];
 
-$error_message = '';
-
 $str = file_get_contents("user_data.txt");
 $str1 = explode("\n",$str);
 foreach($str1 as $value){
-if(strpos($value,$username) == false){
+if(strpos($value,$username) !== false){
     $filename="user.txt";
     $handle=fopen($filename,"a+");
-    fwrite($handle, $value);
+    fwrite($handle, $value."\t");
     fclose($handle);
     }
 }
